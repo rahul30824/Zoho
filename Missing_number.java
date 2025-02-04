@@ -3,15 +3,15 @@ class Main
 {
     public static int MissingNumber(int[] array)
     {
-        int n=array.length-1;
+        int n=array.length+1;//Very Important// 
         int expectedsum=n*(n+1)/2;
         int actualsum=0;
-        for(int i=0;i<n;i++)
+        for(int i=0;i<array.length;i++)
         {
             actualsum+=array[i];
         }
     if(expectedsum==actualsum) return 0;
-        return actualsum-expectedsum;
+        return sum-actualsum;
     }
     public static void main(String[] args)
     {
