@@ -10,7 +10,7 @@ class Main{
                 array[j++]=array[i];
             }
         }
-        while(j<array.length)
+        while(array.length>j)//here after duplicates were present so atha killi eriii//
         {
             array[j]=0;
             j++;
