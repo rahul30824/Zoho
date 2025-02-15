@@ -24,12 +24,13 @@ class Main {
         }
 
         // Convert map to a list of entries and sort by divisor count in descending order
-        List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet());
-        entries.sort((entry1, entry2) -> entry2.getValue() - entry1.getValue());
+        List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(map.entrySet()); //We are integrating the List and the Map Because we need to SORT//
+        entries.sort((entry1, entry2) -> entry2.getValue() - entry1.getValue()); 
 
         // Print the values in descending order based on divisor count
         for (Map.Entry<Integer, Integer> entry : entries) {
-            System.out.print(entry.getKey()+",");
+            System.out.print(entry.getKey()+",");   ///here we are printing the Key alone so we are using different approach in iterating//
+                                                     //Nothing we are just priting the map we need only key right so this approach//
         }
     }
 }
