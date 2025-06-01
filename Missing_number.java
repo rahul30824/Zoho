@@ -15,7 +15,8 @@ class Main
     }
     public static void main(String[] args)
     {
-       int[] array ={1,2,3,4,5,6,7};
+       int[] array ={1,2,3,4,5,6,7};//if its contains 0 no need nums.length+1
+                                       //if not  need nums.length; okei :)))
        System.out.print(MissingNumber(array));
        
     }
